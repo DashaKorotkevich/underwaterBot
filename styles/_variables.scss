@@ -1,0 +1,22 @@
+:root{
+  --color-dark: #000;
+  --color-ligth: #FFFFFF;
+  --color-background: #373D63;
+
+  --border: 2px solid var(--color-dark);
+  --border-radius: 14px;
+
+  --shadow: 0 5px 0 0 var(--color-dark);
+
+  --font-family-base: 'Space Grotesk', sans-serif;
+
+  --container-width: 1240px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 35px;
+
+  --input-height: 70px;
+  --button-height: 50px;
+
+  --transition-duration: 0.4s;
+}

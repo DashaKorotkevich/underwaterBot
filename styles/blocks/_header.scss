@@ -1,0 +1,75 @@
+.header{
+
+  margin-top: 35px;
+
+  &__support{
+    position: relative;
+    @include hover{
+      &::after{width: 100%;}
+    }
+  }
+
+  &__support::after{
+    content:'';
+    position: absolute;
+    top:150%;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    translate: -50%;
+    background-color: var(--color-ligth);
+    transition-duration: inherit;
+  }
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    column-gap: 148px;
+
+    @include tablet{
+      column-gap:30px;
+    }
+  }
+
+  &__support{
+    display: block;
+  }
+
+  &__menu{
+
+    &-list{
+      display: flex;
+      align-items:center;
+      column-gap:35px;
+
+      @include desktop{
+        column-gap: 20px;
+      }
+    }
+    &-link{
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 70px;
+
+      @include hover{//миксин без кавычек с include
+        &::after{
+          width: 100%;
+        }
+      }
+
+      &::after{
+          content:'';
+          position: absolute;
+          top:100%;
+          left:50%;
+          translate: -50%;
+          width: 0;
+          height: 2px;
+          transition-duration: inherit;
+          background-color:var(--color-ligth);
+      }
+    }
+  }
+}

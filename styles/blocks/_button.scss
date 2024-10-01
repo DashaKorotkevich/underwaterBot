@@ -1,0 +1,18 @@
+.button{
+  @include reset-button;
+  @include flex-center(true);//миксин без кавычек с include
+  height:var(--button-height);
+  border-radius: var(--border-radius);
+  background-color:var(--color-dark);
+  color:var(--color-ligth);
+
+  @include hover{
+    box-shadow: 5px 5px #0003 ;
+  }
+  & a,p{
+    box-sizing:border-box;
+    padding: 10px 50px;
+    display: inline-block;
+  }
+  width: 200px;
+}

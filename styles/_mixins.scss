@@ -1,0 +1,44 @@
+@mixin fluid-text($max: 40, $min: 16){
+  font-size: clamp(#{$min}px,#{$max / 1440 * 100}vw,#{$max}px);
+}
+
+@mixin reset-link{
+  color: inherit; //наследует цвет родителя
+  &,
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+a{
+  @include reset-link
+}
+
+@mixin reset-button{
+  padding:0;
+  background-color: transparent;
+  border:none;
+}
+
+@mixin flex-center($isInline: false){ 
+  @if $isInline {
+    display: inline-flex; 
+  }
+  @else{
+    display: flex;
+  }
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin abs-center{ //Миксин abs-center в SCSS предназначен для центрирования элемента абсолютно относительно его родителя. 
+  position: absolute;
+  top:50%;
+  left:50%;
+  translate: -50% -50%; //Применяет трансформацию, которая сдвигает элемент назад на 50% его ширины и высоты.
+}
+
+@mixin sqare($size){
+  width: $size;
+  aspect-ratio: 1;
+}

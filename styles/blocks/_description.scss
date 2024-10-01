@@ -1,0 +1,39 @@
+.section-content_description-list{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  @include tablet{
+    display:contents;
+    
+  }
+
+  & ul{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap:35px;
+  }
+
+    &-item{
+      display: flex;
+      column-gap: 35px;
+      align-items:center;
+      
+      &1{
+        justify-content: start;
+      }
+
+      &2{
+        justify-content: end;
+      }
+    }
+  }
+  
+
+.section-content_description-small-line{
+  height: 2px;
+  width: 35px;
+  background-color:var(--color-ligth);
+  translate: 0 50%;
+}

@@ -1,0 +1,31 @@
+.section-content_control{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap:50px;
+  row-gap: 50px;
+
+
+  @include tablet{
+    justify-content: space-around;
+  }
+
+  &-item{
+    width: 280px;
+    height: 250px;
+    border: solid 2px #ffffff;
+    border-radius:var(--border-radius);
+    position: relative;
+    & p{
+      width: 230px;
+      text-align: center;
+      @include abs-center;
+      
+    }
+  }
+}
+
+ 
+
+
+

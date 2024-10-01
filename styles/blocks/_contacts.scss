@@ -1,0 +1,12 @@
+.contacts-p{
+  margin: 0;
+}
+@include mobile{
+  .contacts-p{
+    text-align: center;
+  }
+  .contacts-button{
+    margin: 0 auto;
+  }
+}
+
