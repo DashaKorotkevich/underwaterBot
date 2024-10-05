@@ -7,10 +7,11 @@
 
 
   @include tablet{
-    justify-content: space-around;
+    justify-content: center;
   }
 
   &-item{
+    background-color:#485084;
     width: 280px;
     height: 250px;
     border: solid 2px #ffffff;
@@ -24,7 +25,21 @@
     }
   }
 }
+.control-img{
+  display: flex;
+  justify-content: center;
 
+  & img{
+    border-radius: var(--border-radius);
+    display: inline-block;
+    width: 500px;
+    @include tablet{
+      
+        width: 300px;
+      
+    }
+  }
+}
  
 
 

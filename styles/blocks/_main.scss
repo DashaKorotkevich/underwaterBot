@@ -32,6 +32,7 @@
     }
 
     &-img{
+      border-radius: var(--border-radius);
     @include tablet{
       width: 380px;
 
@@ -40,9 +41,10 @@
       width: 480px;
     }
     display: block;
-    width: 530px;
+    width: 620px;
     height: auto;
     margin-top: 35px;
+    margin-bottom: 50px;
     }
   }
 }

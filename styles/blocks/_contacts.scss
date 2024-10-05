@@ -1,6 +1,11 @@
 .contacts-p{
   margin: 0;
 }
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+}
 @include mobile{
   .contacts-p{
     text-align: center;
