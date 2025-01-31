@@ -1,5 +1,19 @@
 footer{
-  height: 70px;
+  @include fluid-text(18, 12);
+}
+.logo{
+  width: 70px;
+  background-color:#fff;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.footer__support{
   display: flex;
+  align-items:center;
   justify-content: space-between;
+}
+p{
+  text-align: justify;
+  margin-bottom: 20px;
 }

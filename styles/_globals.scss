@@ -44,6 +44,10 @@ h2{
   margin-top: 70px;
 }
 
+.section-line:last-child {
+  margin-bottom: 20px; /* Другой отступ для последнего элемента */
+}
+
 .section-header{
   display: flex;
   justify-content: center;
